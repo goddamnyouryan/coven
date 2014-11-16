@@ -1,0 +1,27 @@
+$fonts: 'fontawesome-webfont';
+
+@each $font in $fonts {
+  @include font-face(
+    $font,
+    font-files(
+      '#{$font}.woff', woff,
+      '#{$font}.ttf', truetype,
+      '#{$font}.svg##{$font}', svg
+    ),
+    '#{$font}.eot',
+    normal,
+    normal
+  );
+}
+
+@mixin font-format($font, $font-size, $sans: true) {
+  @if $sans {
+    font-family: $font, 'Helvetica', Arial, sans-serif;
+  } @else {
+    font-family: $font, Georgia, serif;
+  }
+  font-size: $font-size;
+}
+
+@mixin sans($font-size) { @include font-format('Helvetica Neue', $font-size); }
+@mixin icons($font-size) { @include font-format(nth($fonts, 1), $font-size); }

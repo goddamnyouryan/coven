@@ -1,0 +1,23 @@
+header {
+  @include clearfix;
+  background: $header-background;
+  color: $header-text;
+  padding: 20px 30px;
+
+  a {
+    color: $header-text;
+  }
+
+  h1 {
+    @include float-left;
+  }
+
+  .menu-toggle {
+    @include float-right;
+  }
+}
+
+nav {
+  background: $nav-background;
+  color: $nav-text;
+}

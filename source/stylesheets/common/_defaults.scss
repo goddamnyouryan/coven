@@ -1,0 +1,22 @@
+html, html a {
+  @include font-smoothing;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include sans(1em);
+  background: $background;
+  color: $text;
+}
+
+a {
+  @include _transition(color);
+  color: $text;
+
+  &:hover {
+    color: $highlight;
+  }
+}

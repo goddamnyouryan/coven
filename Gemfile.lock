@@ -130,5 +130,3 @@ DEPENDENCIES
   middleman (~> 3.3.5)
   middleman-livereload (~> 3.1.0)
   slim (~> 2.0)
-  tzinfo-data
-  wdm (~> 0.1.0)
