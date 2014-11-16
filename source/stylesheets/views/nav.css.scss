@@ -1,0 +1,9 @@
+nav {
+  background: $nav-background;
+  color: $nav-text;
+  position: absolute;
+  z-index: 1;
+  width: $nav-width;
+  right: 0;
+  height: 100%;
+}

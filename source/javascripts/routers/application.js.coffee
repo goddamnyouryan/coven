@@ -4,4 +4,4 @@ class Coven.Routers.Application extends Backbone.Router
     '': 'home'
 
   home: ->
-    console.log 'Welcome to Backbone'
+    new Coven.Views.Nav el: '.nav-toggle'

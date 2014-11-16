@@ -1,0 +1,18 @@
+header {
+  @include clearfix;
+  background: $header-background;
+  color: $header-text;
+  padding: 20px $global-padding;
+
+  a {
+    color: $header-text;
+  }
+
+  h1 {
+    @include float-left;
+  }
+
+  .nav-toggle {
+    @include float-right;
+  }
+}

@@ -13,13 +13,14 @@ html
     == javascript_include_tag  'application'
 
   body class="#{page_classes}"
-  header
-    h1 = link_to 'Coven', '/'
-    a.menu-toggle Menu
+    header
+      h1 = link_to 'Coven', '/'
+      a.nav-toggle Menu
 
-  nav
-    .sources
-      - data.sources.sources.each do |source|
-        input type='checkbox' id="#{dashify(source)}"
-        label for="#{dashify(source)}" = source
-  == yield
+    nav
+      .sources
+        - data.sources.sources.each do |source|
+          input type='checkbox' id="#{dashify(source)}"
+          label for="#{dashify(source)}" = source
+
+    #container == yield
