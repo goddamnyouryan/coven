@@ -1,1 +1,9 @@
-//= require_tree .
+//= require vendor/jquery
+//= require vendor/modernizr
+//= require vendor/underscore
+//= require vendor/backbone
+//= require coven
+//= require_tree ./routers
+//= require_tree ./collections
+//= require_tree ./models
+//= require_tree ./views
