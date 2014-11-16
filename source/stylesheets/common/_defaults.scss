@@ -12,19 +12,6 @@ body {
   color: $text;
 }
 
-#container {
-  @include _transition(margin);
-  background: $background;
-  position: relative;
-  z-index: 2;
-  width: 100%;
-
-  &.menu-open {
-    margin-left: -$nav-width;
-  }
-}
-
-
 a {
   @include _transition(color);
   color: $text;

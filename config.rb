@@ -55,6 +55,7 @@ require 'slim'
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+set :api_root, 'http://localhost:4000/api/v1/'
 
 # Build-specific configuration
 configure :build do
@@ -72,4 +73,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  set :api_root, 'http://api.coven.link/api/v1/'
 end
