@@ -2,7 +2,7 @@ header {
   @include clearfix;
   background: $header-background;
   color: $header-text;
-  padding: 20px 30px;
+  padding: 20px $global-padding;
 
   a {
     color: $header-text;
@@ -28,6 +28,7 @@ nav {
   position: relative;
   z-index: 2;
   width: 100%;
+  padding: 0 $global-padding;
 
   &.menu-open {
     margin-left: -$nav-width;

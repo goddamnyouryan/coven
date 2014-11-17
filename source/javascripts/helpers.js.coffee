@@ -1,4 +1,8 @@
 Coven.Helpers =
+  dashify: (string) ->
+    string = string.replace(/(.)([A-Z])/,'$1-$2')
+    string.toLowerCase()
+
   timeAgo: (date) ->
     date = new Date(date)  if typeof date isnt "object"
     seconds = Math.floor((new Date() - date) / 1000)

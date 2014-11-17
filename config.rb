@@ -43,7 +43,7 @@ end
 # Methods defined in the helpers block are available in templates
 helpers do
   def dashify(string)
-    string = string.gsub(/(.)([A-Z])/,'\1_\2')
+    string = string.gsub(/(.)([A-Z])/,'\1-\2')
     string.downcase
   end
 end

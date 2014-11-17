@@ -1,7 +1,13 @@
-$background: white;
-$text: black;
-$highlight: orange;
-$header-background: $text;
-$header-text: $background;
-$nav-background: lighten($text, 20%);
+$background: #ECF0F1;
+$text: darken(#6C7A89, 20%);
+$highlight: #EB974E;
+$header-background: white;
+$header-text: $text;
+$nav-background: lighten($text, 40%);
 $nav-text: $background;
+$posts-background: $header-background;
+
+$hacker-news-background: $highlight;
+$lobsters-background: #96281B;
+$product-hunt-background: #DA552F;
+$r-programming-background: #59ABE3;

@@ -1,0 +1,66 @@
+ul.posts {
+  padding: 50px 0;
+
+  li {
+    @include clearfix;
+    margin: 0 0 1.5rem 0;
+    background: $posts-background;
+    height: $post-height;
+
+    &:before {
+      background: $highlight;
+      color: white;
+      font-size: 2.5em;
+      text-align: center;
+      width: $post-height;
+      height: $post-height;
+      display: block;
+      position: absolute;
+    }
+
+    &.hacker-news {
+      &:before {
+        content: 'Y';
+        background: $hacker-news-background;
+      }
+    }
+
+    &.lobsters {
+      &:before {
+        content: 'L';
+        background: $lobsters-background;
+      }
+    }
+
+    &.product-hunt {
+      &:before {
+        content: 'P';
+        background: $product-hunt-background;
+      }
+    }
+
+    &.r-programming {
+      &:before {
+        content: 'r';
+        background: $r-programming-background;
+      }
+    }
+  }
+
+  .info {
+    @include float-left;
+    margin-left: 80px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    @include float-right;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
