@@ -1,3 +1,7 @@
 - _.each @posts, (post) =>
   li
     a href="#{post.get('url')}" = post.get('title')
+    date
+      ' #{Coven.Helpers.timeAgo post.get('external_created_at')}
+      ' ago
+    a.comments href="#{post.get('comments')}" = post.get('comment_count')
