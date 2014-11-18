@@ -1,0 +1,27 @@
+.hacker-news {
+  &:before {
+    content: 'Y';
+    background: $hacker-news-background;
+  }
+}
+
+.lobsters {
+  &:before {
+    content: 'L';
+    background: $lobsters-background;
+  }
+}
+
+.product-hunt {
+  &:before {
+    content: 'P';
+    background: $product-hunt-background;
+  }
+}
+
+.r-programming {
+  &:before {
+    content: 'r';
+    background: $r-programming-background;
+  }
+}

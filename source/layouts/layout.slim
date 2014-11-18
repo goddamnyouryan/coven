@@ -18,9 +18,15 @@ html
       a.nav-toggle Menu
 
     nav
-      .sources
+      h2 Which sources would you like to receive your news from?
+      ul.sources
         - data.sources.sources.each do |source|
-          input type='checkbox' id="#{dashify(source)}"
-          label for="#{dashify(source)}" = source
+          li
+            - dashified = dashify(source)
+            input type='checkbox' id="#{dashified}"
+            label for="#{dashified}" class="#{dashified}" = source
+
+      footer
+        p ©#{Time.current.year} #{link_to 'goddamnyouryan', 'http://www.goddamnyouryan.com', target: '_blank'} #{link_to 'Github', 'http://www.github.com/goddamnyouryan/coven', class: 'github'}
 
     #container == yield

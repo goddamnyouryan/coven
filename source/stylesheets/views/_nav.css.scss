@@ -1,9 +1,47 @@
 nav {
   background: $nav-background;
   color: $nav-text;
-  position: absolute;
   z-index: 1;
   width: $nav-width;
-  right: 0;
+  position: fixed;
+  right: 0; top: 0;
   height: 100%;
+  padding: ($header-height + 20px) 20px 20px;
+}
+
+ul.sources {
+  margin: 25px 0;
+
+  li {
+    display: inline-block;
+    width: 45%;
+    margin: 0 5% 5% 0;
+    background: darken($nav-background, 10%);
+    cursor: pointer;
+
+    &:nth-of-type(2n) {
+      margin: 0 0 5% 0;
+    }
+
+    input[type=checkbox] {
+      display: none;
+
+      &:checked + label {
+        outline: 4px solid $background;
+      }
+    }
+
+    label {
+      display: block;
+      text-align: center;
+      font-size: 0.85rem;
+
+      &:before {
+        height: 100px;
+        color: white;
+        display: block;
+        font-size: 4rem;
+      }
+    }
+  }
 }
