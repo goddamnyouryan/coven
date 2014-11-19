@@ -1,5 +1,6 @@
 //= require vendor/jquery
 //= require vendor/modernizr
+//= require vendor/cookie.jquery
 //= require vendor/underscore
 //= require vendor/backbone
 //= require coven
