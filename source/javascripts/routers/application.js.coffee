@@ -5,4 +5,4 @@ class Coven.Routers.Application extends Backbone.Router
 
   home: ->
     new Coven.Views.Nav el: '.nav-toggle'
-    new Coven.Views.Posts(el: 'ul.posts').render()
+    new Coven.Views.Sources(el: 'ul.sources').render()

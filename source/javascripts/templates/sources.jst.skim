@@ -1,0 +1,5 @@
+- _.each Coven.Constants.SOURCES, (source) =>
+  li
+    - dashified = Coven.Helpers.dashify(source)
+    input type='checkbox' id="#{dashified}"
+    label for="#{dashified}" class="#{dashified}" = source
