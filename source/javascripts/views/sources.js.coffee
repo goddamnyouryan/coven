@@ -16,6 +16,7 @@ class Coven.Views.Sources extends Backbone.View
     event.preventDefault()
     sources = _.map @$('input:checked'), (input) -> $(input).val()
     @setCookie(sources)
+    @render()
 
   setCookie: (array) ->
     $.cookie(@cookieName, array)

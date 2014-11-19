@@ -1,8 +1,8 @@
 - _.each Coven.Constants.SOURCES, (source) =>
   li
     - dashified = Coven.Helpers.dashify(source)
-    - if !@cookie? || @cookie.indexOf(dashified) >= 0
-      input type='checkbox' id="#{dashified}" checked='checked' value="#{dashified}"
+    - if !@cookie? || @cookie.indexOf(source) >= 0
+      input type='checkbox' id="#{dashified}" checked='checked' value="#{source}"
     - else
-      input type='checkbox' id="#{dashified}" value="#{dashified}"
+      input type='checkbox' id="#{dashified}" value="#{source}"
     label for="#{dashified}" class="#{dashified}" = source
