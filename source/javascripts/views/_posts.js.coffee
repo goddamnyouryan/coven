@@ -1,5 +1,5 @@
 class Coven.Views.Posts extends Backbone.View
-  template: JST['templates/posts']
+  template: JST['templates/_posts']
 
   initialize: (options) ->
     @data = options.data
