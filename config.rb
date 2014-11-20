@@ -36,9 +36,22 @@ end
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# configure :development do
-#   activate :livereload
-# end
+configure :development do
+  activate :livereload
+end
+
+activate :dotenv
+
+# Activate sync extension
+activate :sync do |sync|
+  sync.fog_provider = 'AWS'
+  sync.fog_directory = ENV['S3_BUCKET']
+  sync.fog_region = 'us-east-1'
+  sync.aws_access_key_id = ENV['S3_ACCESS_KEY']
+  sync.aws_secret_access_key = ENV['S3_SECRET_KEY']
+  sync.existing_remote_files = 'delete'
+  sync.gzip_compression = true
+end
 
 # Methods defined in the helpers block are available in templates
 helpers do
