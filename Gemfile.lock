@@ -129,6 +129,9 @@ GEM
       middleman-sprockets (>= 3.1.2)
       sass (>= 3.4.0, < 4.0)
       uglifier (~> 2.5)
+    middleman-cloudfront (0.1.0)
+      fog (~> 1.9)
+      middleman-core (~> 3.0)
     middleman-core (3.3.7)
       activesupport (~> 4.1.0)
       bundler (~> 1.1)
@@ -220,6 +223,7 @@ PLATFORMS
 
 DEPENDENCIES
   middleman (~> 3.3.5)
+  middleman-cloudfront
   middleman-dotenv
   middleman-livereload (~> 3.1.0)
   middleman-sync

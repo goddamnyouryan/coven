@@ -51,8 +51,13 @@ activate :sync do |sync|
   sync.aws_secret_access_key = ENV['S3_SECRET_KEY']
   sync.existing_remote_files = 'delete'
   sync.gzip_compression = true
-  sync.cdn_distribution_id = ENV['CLOUDFRONT_ID']
-  sync.invalidate = ['index.html']
+end
+
+activate :cloudfront do |cf|
+  cf.access_key_id = ENV['S3_ACCESS_KEY']
+  cf.secret_access_key = ENV['S3_SECRET_KEY']
+  cf.distribution_id = ENV['CLOUDFRONT_ID']
+  cf.filter = /\.html$/i
 end
 
 # Methods defined in the helpers block are available in templates
