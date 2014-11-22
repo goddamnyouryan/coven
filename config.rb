@@ -51,6 +51,8 @@ activate :sync do |sync|
   sync.aws_secret_access_key = ENV['S3_SECRET_KEY']
   sync.existing_remote_files = 'delete'
   sync.gzip_compression = true
+  sync.cdn_distribution_id = ENV['CLOUDFRONT_ID']
+  sync.invalidate = ['index.html']
 end
 
 # Methods defined in the helpers block are available in templates
