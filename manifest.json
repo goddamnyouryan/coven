@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+
+  "name": "Coven",
+  "description": "All the news a programmer could ever need",
+  "version": "1.0",
+
+  "permissions": [
+    "https://api.coven.link/"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "css": ["stylesheets/application.css"],
+      "js": ["javascripts/application.js"]
+    }
+  ],
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}

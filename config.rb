@@ -57,7 +57,6 @@ activate :cloudfront do |cf|
   cf.access_key_id = ENV['S3_ACCESS_KEY']
   cf.secret_access_key = ENV['S3_SECRET_KEY']
   cf.distribution_id = ENV['CLOUDFRONT_ID']
-  cf.filter = /\.html$/i
 end
 
 # Methods defined in the helpers block are available in templates
@@ -87,7 +86,7 @@ configure :build do
   activate :minify_javascript
 
   # Enable cache buster
-  activate :asset_hash
+  # activate :asset_hash
 
   # Use relative URLs
   # activate :relative_assets
