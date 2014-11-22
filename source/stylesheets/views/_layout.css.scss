@@ -38,4 +38,9 @@ nav {
   &.menu-open {
     margin-left: -$nav-width;
   }
+
+  &.loaded {
+    min-height: 100%;
+    height: auto;
+  }
 }

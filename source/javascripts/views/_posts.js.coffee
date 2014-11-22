@@ -15,3 +15,4 @@ class Coven.Views.Posts extends Backbone.View
 
   renderPosts: ->
     @$el.html @template(posts: @collection.models)
+    $('#container').addClass 'loaded'

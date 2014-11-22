@@ -2,6 +2,10 @@ html, html a {
   @include font-smoothing;
 }
 
+html, body, #container {
+  height: 100%;
+}
+
 * {
   box-sizing: border-box;
 }
