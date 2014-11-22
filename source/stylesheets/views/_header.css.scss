@@ -10,9 +10,24 @@ header {
 
   h1 {
     @include float-left;
+
+    a {
+      $file: 'logo.png';
+      background: image-url($file) no-repeat;
+      height: image-height($file);
+      width: image-width($file);
+      display: block;
+      text-indent: -9999px;
+    }
   }
 
   .nav-toggle {
     @include float-right;
+    @include icons(1rem);
+    cursor: pointer;
+
+    &:before {
+      content: '\f0c9';
+    }
   }
 }
