@@ -45,3 +45,27 @@ ul.sources {
     }
   }
 }
+
+ul.buttons {
+  font-size: 0.85rem;
+  font-weight: bold;
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  a  {
+    @include border-radius(3px);
+    background: $background;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+
+    &:hover {
+      @include _transition(background);
+      color: $text;
+      background: darken($background, 10%);
+    }
+  }
+}
