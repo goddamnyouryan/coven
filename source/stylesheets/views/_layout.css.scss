@@ -44,3 +44,14 @@ nav {
     height: auto;
   }
 }
+
+footer {
+
+  a {
+    color: $background;
+
+    &:hover {
+      color: $text;
+    }
+  }
+}

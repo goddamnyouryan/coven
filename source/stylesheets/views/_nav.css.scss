@@ -47,7 +47,7 @@ ul.sources {
 }
 
 ul.buttons {
-  font-size: 0.85rem;
+  @include sans(0.85rem);
   font-weight: bold;
 
   li {
@@ -61,9 +61,10 @@ ul.buttons {
     text-align: center;
     text-decoration: none;
     padding: 10px;
+    color: lighten($text, 20%);
 
     &:hover {
-      @include _transition(background);
+      @include _transition(all);
       color: $text;
       background: darken($background, 10%);
     }
