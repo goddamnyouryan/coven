@@ -12,6 +12,20 @@ html
 
     == stylesheet_link_tag 'application'
     == javascript_include_tag  'application'
+    - icon = 'http://www.coven.link/images/icon128.png'
+    - title = 'Coven - All the news a programmer needs'
+    - description = 'Coven pulls in posts from Hacker News, /r/programming, Lobste.rs and ProductHunt to give you all the news a programmer could need, as a site or as a chrome extension for new tabs.'
+    meta name='viewport' content='initial-scale=1.0, maximum-scale=1.0, user-scalable=no'
+    meta name='title' content=title
+    meta name='description' content=description
+    meta name='keywords' content='News, Aggregate, Aggregation, Programming, Hacker News, Y Combinator, reddit, /r/programming, Product Hunt, Lobsters'
+    link rel="shortcut icon" href='/favicon.png'
+    link rel='image_src' href="http:#{icon}"
+    meta property='og:image' content="http:#{icon}" name='thumb'
+    meta property='og:type' content='website'
+    meta property='og:url' content='http://www.coven.link'
+    meta property='og:title' content=title
+    meta property='og:description' content=description
 
   body class="#{page_classes}"
     header
