@@ -71,3 +71,19 @@ ul.posts {
     text-decoration: none;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  ul.posts {
+    li {
+      overflow: auto;
+      height: auto;
+
+      .info {
+        margin-bottom: 12px;
+      }
+    }
+    h3.comments {
+      display: none;
+    }
+  }
+}
