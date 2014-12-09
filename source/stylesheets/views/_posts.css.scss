@@ -21,14 +21,19 @@ ul.posts {
 
   .info {
     @include float-left;
-    margin: 12px 0 0 80px;
+    margin-left: 80px;
   }
 
   h2 {
     font-size: 1.5rem;
 
-    a:visited {
-      color: lighten($text, 40%);
+    a {
+      display: inline-block;
+      line-height: $post-height;
+
+      &:visited {
+        color: lighten($text, 40%);
+      }
     }
   }
 
