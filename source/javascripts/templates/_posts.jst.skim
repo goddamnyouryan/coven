@@ -2,9 +2,9 @@
   li class="#{Coven.Helpers.dashify(post.get('source'))}"
     .info
       h2
-        a href="#{post.get('url')}" target='_blank' => post.get('title')
+        a href="#{post.get('url')}" => post.get('title')
         date
           ' #{Coven.Helpers.timeAgo post.get('external_created_at')}
           ' ago
     h3.comments
-      a href="#{post.get('comments')}" target='_blank' = post.get('comment_count')
+      a href="#{post.get('comments')}" = post.get('comment_count')
