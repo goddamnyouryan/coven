@@ -11,6 +11,7 @@ It accumuldates programmer-centric news from the following sources:
 This is the codebase for the frontend of the Coven site / Chrome extension. It is built using [Middleman](http://middlemanapp.com/).
 
 Visit here to work on the [Coven Backend API](https://www.github.com/goddamnyouryan/coven-api), built in Rails.
+Check out the [Coven Command Line app](https://www.github.com/goddamnyouryan/coven-api), built in php by [jackyliang](https://github.com/jackyliang).
 
 ## Contributing
 - Open an issue to see if your change is worth it (if it's a bug fix, assume it's worth it)
