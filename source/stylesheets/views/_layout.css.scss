@@ -28,7 +28,7 @@ nav {
 }
 
 #container {
-  @include _transition(margin);
+  @include _transition(transform);
   background: $background;
   position: relative;
   z-index: 2;
@@ -36,7 +36,7 @@ nav {
   padding: $header-height $global-padding 0;
 
   &.menu-open {
-    margin-left: -$nav-width;
+    @include transform(translate(-$nav-width, 0));
   }
 
   &.loaded {

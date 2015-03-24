@@ -11,7 +11,6 @@ html
     title == data.page.title || 'Coven'
 
     == stylesheet_link_tag 'application'
-    == javascript_include_tag  'application'
     - icon = 'http://www.coven.link/images/icon128.png'
     - title = 'Coven - All the news a programmer needs'
     - description = 'Coven pulls in posts from Hacker News, /r/programming, Lobste.rs and ProductHunt to give you all the news a programmer could need, as a site or as a chrome extension for new tabs.'
@@ -44,3 +43,5 @@ html
         p ©#{Time.current.year} #{link_to 'goddamnyouryan', 'http://www.goddamnyouryan.com', target: '_blank'}
 
     #container == yield
+
+    == javascript_include_tag  'application'
