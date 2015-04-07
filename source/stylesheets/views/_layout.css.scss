@@ -56,3 +56,9 @@ footer {
     }
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 640px) {
+  #container {
+    padding: $header-height $global-mobile-padding 0;
+  }
+}
