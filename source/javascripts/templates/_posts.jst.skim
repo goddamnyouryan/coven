@@ -2,7 +2,7 @@
   li class="#{Coven.Helpers.dashify(post.get('source'))}"
     .info
       h2
-        a href="#{post.get('url')}" => post.get('title')
+        a href="#{post.get('url')}" => @safe post.get('title')
         date
           ' #{Coven.Helpers.timeAgo post.get('external_created_at')}
           ' ago
