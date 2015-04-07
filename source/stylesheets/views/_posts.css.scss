@@ -79,16 +79,34 @@ ul.posts {
 
 @media screen and (min-width: 320px) and (max-width: 640px) {
   ul.posts {
+    padding: $global-mobile-padding 0;
+
     li {
       overflow: auto;
       height: auto;
+      margin-bottom: $global-mobile-padding;
 
       .info {
-        margin-bottom: 12px;
+        margin: 6px 0 6px 75px;
       }
     }
+
     h3.comments {
       display: none;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+
+      a {
+        display: block;
+        line-height: 1.3;
+        margin-bottom: 6px;
+      }
+
+      date {
+        display: block;
+      }
     }
   }
 }
