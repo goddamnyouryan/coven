@@ -30,8 +30,11 @@ nav {
 #container {
   @include _transition(transform);
   background: $background image-url('preloader.gif') no-repeat center center;
-  position: relative;
+  position: fixed;
+  top: 0;
+  bottom: 0;
   z-index: 2;
+  overflow: auto;
   width: 100%;
   padding: $header-height $global-padding 0;
 
