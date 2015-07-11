@@ -6,7 +6,10 @@ class Coven.Views.Posts extends Backbone.View
     @collection = new Coven.Collections.Posts
 
   render: ->
+    @$el.empty()
+    $('#container').removeClass 'loaded'
     @collection.fetch
+      reset: true
       data: { sources: @data }
       success: =>
         @renderPosts()
