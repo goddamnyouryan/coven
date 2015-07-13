@@ -3,6 +3,7 @@ ul.posts {
 
   li {
     @include clearfix;
+    position: relative;
     margin: 0 0 1.5rem 0;
     background: $posts-background;
     height: $post-height;
@@ -25,6 +26,7 @@ ul.posts {
   }
 
   h2 {
+    margin-right: 50px;
     font-size: 1.5rem;
 
     a {
@@ -43,8 +45,8 @@ ul.posts {
   }
 
   h3 {
-    @include float-right;
-    position: relative;
+    position: absolute;
+    right: 10px;
     width: 40px;
 
     a {
