@@ -10,7 +10,7 @@ nav {
 }
 
 ul.sources {
-  margin: 25px 0;
+  margin: 25px 0 0;
 
   li {
     display: inline-block;
@@ -42,6 +42,20 @@ ul.sources {
         display: block;
         font-size: 4rem;
       }
+    }
+  }
+}
+
+ul.settings {
+  margin: 0 0 25px;
+
+  li {
+    input[type=checkbox] {
+      margin-right: 8px;
+    }
+
+    label {
+      vertical-align: middle;
     }
   }
 }
