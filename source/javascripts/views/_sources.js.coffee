@@ -4,13 +4,11 @@ class Coven.Views.Sources extends Backbone.View
 
   cookieName: '_coven_preferences'
 
-  render: ->
-    @$el.html @template(cookie: @cookie())
-    @renderPosts()
+  initialize: (options) ->
+    @posts = new Coven.Views.Posts(el: 'ul.posts', data: @cookie(), settings: options.settings).render()
 
-  renderPosts: ->
-    @posts = @posts || new Coven.Views.Posts(el: 'ul.posts', data: @cookie())
-    @posts.render()
+  render: (options) ->
+    @$el.html @template(cookie: @cookie())
 
   events: ->
     'change input': 'updatePreferences'
@@ -19,7 +17,8 @@ class Coven.Views.Sources extends Backbone.View
     event.preventDefault()
     sources = _.map @$('input:checked'), (input) -> $(input).val()
     @setCookie(sources)
-    @renderPosts()
+    @posts.updateData(@cookie())
+    @render()
 
   setCookie: (array) ->
     $.cookie(@cookieName, array)
