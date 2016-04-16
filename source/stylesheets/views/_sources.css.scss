@@ -25,3 +25,10 @@
     background: $r-programming-background;
   }
 }
+
+.barnacles {
+  &:before {
+    content: 'B';
+    background: $barnacles-background;
+  }
+}
