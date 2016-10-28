@@ -7,6 +7,7 @@ It accumuldates programmer-centric news from the following sources:
 - [Lobsters](https://lobste.rs/)
 - [/r/programming](http://www.reddit.com/r/programming)
 - [Product Hunt](http://www.producthunt.com/)
+- [Barnacles](https://barnacl.es/)
 
 This is the codebase for the frontend of the Coven site / Chrome extension. It is built using [Middleman](http://middlemanapp.com/).
 
