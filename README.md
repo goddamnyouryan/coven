@@ -1,5 +1,5 @@
 # Coven
-[Coven](http://www.coven.link) is an open sourced news accumulation site and [Chrome Extension](https://chrome.google.com/webstore/detail/ifmjfbcenpbeenngpjhmkflkbaeacdjo) that appears in new tabs before a new site is entered.
+[Coven](http://www.coven.link) is an open sourced news accumulation site and [Chrome Extension](https://chrome.google.com/webstore/detail/coven/fnebcmfaoeakcahilaekfmfhmkjnilmk) that appears in new tabs before a new site is entered.
 
 It accumuldates programmer-centric news from the following sources:
 
